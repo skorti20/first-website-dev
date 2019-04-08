@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="urf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <h1 title="survey">
+     <link rel="stylesheet" type="text/css" href="style.css">
+   Survey Form
+    </h1>
+  </head>
+    <p id="description">
+      Let us know you how we can improve our Site
+    </p>
+    <form id="survey-form">
+      <div>
+      <label class="name">*Name</label>
+      <input class="name" placeholder="Enter your Name">
+      </div>
+      <div>
+        <label class="email">*Email</label>
+        <input id="email" placeholder="Enter your Email">
+      </div>
+      <div>
+        <label class="Number">*Age</label>
+        <input id="number" min="1" max="125" placeholder="Enter your Age">
+      </div>
+     <div>
+      <label for="current experience in texh">What is your coding Experience</label>
+      <select class="dropdown" name="currentPos" class="dropdown">
+        <option disabled value>select an option</option>
+        <option value="Student">Student</option>
+        <option value="Job">Job</option>
+        <option value="Still learning">Still learning</option>
+        <option value="no ex">No experince</option>
+        <option value="what is coding">What is coding</option>
+       </select>
+        </div>
+          <div>
+       <label for="recommendation">*How likely are  you to use this website</label>
+            <ul style="list-style: none;">
+      <div>        <input type="radio">Definitely</input>
+              </div>
+            <div>
+              <input type="radio">Maybe</input></div>
+      <div>
+        <input type="radio">Not Sure</input></div>
+    </div>
+  <div>
+    <label class="What do you like about your site">What do you like about our site</label><select id="dropdown" class="dropdown" value="select an option">
+    <option disabled selected value>Select an option</option>
+    <option value="challeges">challenges</option>
+    <option value="projects">Projects</option>
+    <option value="community">community</option>
+    <option value="openSource">openSource</option></select>
+  </div>
+  <div>
+    <label class="improvement">Things that we should improved in the future<br>(Check all that apply)</label>
+  </div>
+  <ul class="improvement" style="list-style: none;">
+    <li class="checkbox"><label><input name ="prefer" value="1" type="checkbox" class="userRating">Front-end Projects</label></li>
+    <li class="checkbox"><label><input name ="prefer" value="2" type="checkbox" class="userRating">Back-end Projects</label></li>
+    <li class="checkbox"><label><input name ="prefer" value="3" type="checkbox" class="userRating">Data Visualization</label></li>
+    <li class="checkbox"><label><input name ="prefer" value="4" type="checkbox" class="userRating">Challenges</label></li>
+    <li class="checkbox"><label><input name ="prefer" value="5" type="checkbox" class="userRating">Open Source Community</label></li>
+    <li class="checkbox"><label><input name ="prefer" value="6" type="checkbox" class="userRating">Gitter help room</label></li>
+    <li class="checkbox"><label><input name ="prefer" value="7" type="checkbox" class="userRating">videos</label></li>
+    <li class="checkbox"><label><input name ="prefer" value="8" type="checkbox" class="userRating">City Meetups</label></li>
+    <li class="checkbox"><label><input name ="prefer" value="9" type="checkbox" class="userRating">Wiki</label></li>
+    <li class="checkbox"><label><input name ="prefer" value="10" type="checkbox" class="userRating">Forums</label></li>
+    <li class="checkbox"><label><input name ="prefer" value="11" type="checkbox" class="userRating">Additionaly Courses</label></li>
+  </ul>
+    <br></div>
+  <div>
+    <label for="comments">Any Comments or Suggestions?</label>
+  </div>
+    <textarea id="comments" class="input-field" style="height:50px;resize:verticle;" name="comment" placeholder="Enter your Comment Here..."></textarea>
+  <div>
+    <button class="submit" type="submit"> Submit</button>
+    </form>
+    </body>
+</html>
